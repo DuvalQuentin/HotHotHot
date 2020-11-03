@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="../styles/temperature.css">
+    <link rel="icon" href="../images/favicon.png"/>
+</head>
+<body class="body">
+    <h1 class="titre1"><u>Connexion : </u></h1>
+    <select class="monselect" onchange="location = this.value;">
+        <option value="../index.html">Mon compte</option>
+        <option value="../pages/parametres.html"> Paramètres</option>
+        <option selected value="../pages/connexion.html">Deconnexion</option>
+    </select>
+    <section class="login">
+        <form method="post"> <!-- dans action mettre l'url de destination -->
+        <input type="text" placeholder="Identifiant" id="username">
+        <input type="password" placeholder="Mots de Passe" id="password">
+        <a href="#" class="forgot">Mots de Passe oublié</a>
+        <input type="submit" value="connexion">
+        </form>
+    </section>
+</body>
+</html>

@@ -1,0 +1,151 @@
+.body{
+    background: #60a3bc;
+}
+.historiqueinterieur {
+    float:left;
+    margin-left: 25%;
+    width: 20%;
+    height: 300px;
+    padding: .3rem;
+    background-color: #82ccdd;
+    font: 1rem 'Fira Sans', sans-serif;
+    overflow-y: scroll;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.historiqueexterieur {
+    float:right;
+    margin-right: 25%;
+    width: 20%;
+    height: 300px;
+    padding: .3rem;
+    background-color: #82ccdd;
+    font: 1rem 'Fira Sans', sans-serif;
+    overflow-y: scroll;
+    border-radius: 20px;
+    text-align: center;
+}
+
+.historiqueinterieur > h1,
+.heureTemperature {
+    margin: .5rem;
+    padding: .3rem;
+    font-size: 1.2rem;
+}
+
+.heureTemperature{
+    background: right/contain content-box border-box no-repeat
+}
+
+.heureTemperature > h2,
+.heureTemperature > p {
+    margin: .2rem;
+    font-size: 1rem;
+}
+
+.scroller {
+    width: 300px;
+    height: 100px;
+    overflow-y: scroll;
+}
+.titre1 {
+    margin-left: 25%;
+}
+
+.TemperatureTempsReelleft{
+    float: left;
+    margin-left: 25%;
+    margin-top: 100px;
+}
+.TemperatureTempsReelright{
+    float: right;
+    margin-right: 25%;
+    width: 200px;
+}
+
+.alertinfo {
+    margin-left: 50%;
+}
+
+/*.imggraphique {*/
+/*    margin-left: 25%;*/
+/*    width: 800px;*/
+/*    height: 300px;*/
+/*}*/
+
+.monselect{
+    margin-left: 75%;
+    border-radius: 20px;
+    background-color: #38ada9;
+}
+
+.afficheTemperature
+{
+    margin-left: 25%;
+    width: 50%;
+    background-color: #82ccdd;
+    border-radius: 20px;
+    text-align: center;
+}
+/*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
+
+@media screen and (max-width: 767px)
+{
+    .monselect{
+        margin-left: 75%;
+        border-radius: 20px;
+        background-color: #38ada9;
+        margin-right: 5%;
+    }
+
+    .TemperatureTempsReelleft{
+        float: left;
+        margin-left: 25%;
+        margin-top: 100px;
+    }
+    .TemperatureTempsReelright{
+        float: right;
+        margin-right: 25%;
+        width: 200px;
+    }
+    .afficheTemperature
+    {
+        background-color: #82ccdd;
+        border-radius: 20px;
+        text-align: center;
+        width: 50%;
+    }
+
+    .historiqueinterieur {
+        float:left;
+        margin-left: 25%;
+        width: 50%;
+        height: 200px;
+        background-color: #82ccdd;
+        overflow-y: scroll;
+        text-align: center;
+    }
+
+    .historiqueexterieur {
+        float:right;
+        margin-right: 23%;
+        width: 50%;
+        height: 200px;
+        background-color: #82ccdd;
+        overflow-y: scroll;
+        text-align: center;
+        margin-top: 5%;
+        margin-bottom: 5%;
+    }
+}
+
+/*--------------------------------------------------------Code pour format de tablette--------------------------------------------------------*/
+
+/*@media screen and (min-width: 768px) and (max-width: 1388px)*/
+/*{*/
+/*    .body{*/
+/*        background: blue;*/
+/*    }*/
+/*}*/
+
