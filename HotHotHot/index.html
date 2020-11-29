@@ -5,6 +5,8 @@
         <title>HotHotHot</title>
         <link rel="stylesheet" href="styles/temperature.css">
         <link rel="icon" href="images/favicon.png"/>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+        <script src="javascript/meteo.js"></script>
     </head>
     <body class="body">
     <h1 class="titre1"><u>Bienvenue sur HotHotHot : </u></h1>
@@ -13,14 +15,18 @@
         <option value="./pages/parametres.html"> Paramètres</option>
         <option value="./pages/connexion.html">Deconnexion</option>
     </select>
-    <article class="afficheTemperature">
-        <h2>Température actuelle de l'intérieur : </h2>
-            <font size="7pt"> <a>20°</a> </font>
-            <p><a href="./pages/historique.html">Graphique historique intérieur</a></p>
 
+    <article class="afficheTemperature">
+<!--        <h2>Entrer la ville de votre choix (ex: Toulon) : </h2>-->
+<!--        <input class="ville" type="text" placeholder="ville">-->
+<!--        <input type="button" value="APPEL API METEO"  onclick="buttonClickGET()"  />-->
+<!--        <p id="zone_meteo">LA TEMPERATURE S'AFFICHERA ICI</p>-->
+        <h2>Température actuelle de l'intérieur : </h2>
+        <a id="valeurTemperatureInterieur">...°</a>
+        <p><a href="./pages/historique.html">Graphique historique</a></p>
         <h2>Température actuelle de l'extérieur : </h2>
-            <font size="7pt"> <a>15°</a> </font>
-            <p></p><a href="./pages/historique.html">Graphique historique extérieur</a></p>
+        <a id="valeurTemperatureExterieur">...°</a>
+        <p></p><a href="./pages/historique.html">Graphique historique</a></p>
     </article>
     <article class="historiqueinterieur">
         <h2>Historique intérieur</h2>
@@ -131,6 +137,5 @@
             <p>13°</p>
         </article>
     </article>
-<!--    <img class="imggraphique" src="images/graphique.png" alt="graphique"/>-->
     </body>
 </html>

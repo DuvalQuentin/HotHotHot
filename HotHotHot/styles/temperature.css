@@ -50,24 +50,23 @@
     overflow-y: scroll;
 }
 .titre1 {
-    margin-left: 25%;
+    text-align: center;
 }
 
 .TemperatureTempsReelleft{
     float: left;
-    margin-left: 25%;
+    text-align: center;
     margin-top: 100px;
 }
 .TemperatureTempsReelright{
     float: right;
-    margin-right: 25%;
+    text-align: center;
     width: 200px;
 }
 
 .alertinfo {
-    margin-left: 50%;
+    text-align: center;
 }
-
 /*.imggraphique {*/
 /*    margin-left: 25%;*/
 /*    width: 800px;*/
@@ -88,6 +87,19 @@
     border-radius: 20px;
     text-align: center;
 }
+.ville{
+    background: #60a3bc;
+    text-decoration-color: white;
+}
+::placeholder{ color: black; }
+
+#valeurTemperatureExterieur{
+    font-size: 300%;
+}
+
+#valeurTemperatureInterieur{
+    font-size: 300%;
+}
 /*-------------------------------------------------------Code pour format de smartphone-------------------------------------------------------*/
 
 @media screen and (max-width: 767px)
@@ -101,12 +113,12 @@
 
     .TemperatureTempsReelleft{
         float: left;
-        margin-left: 25%;
+        text-align: center;
         margin-top: 100px;
     }
     .TemperatureTempsReelright{
         float: right;
-        margin-right: 25%;
+        text-align: center;
         width: 200px;
     }
     .afficheTemperature
@@ -129,7 +141,7 @@
 
     .historiqueexterieur {
         float:right;
-        margin-right: 23%;
+        margin-right: 25%;
         width: 50%;
         height: 200px;
         background-color: #82ccdd;
