@@ -25,9 +25,10 @@ var callBackGetSuccess = function(data) {
 function getRandomInt(max) {
     return Math.floor(Math.random() * Math.floor(max));
 }
+GetValeurMeteo("Toulon")
 
 window.setInterval(function(){
     GetValeurMeteo("Toulon")
-    //on lance la fonction GetValeurMeteo toute les 2 secondes
+    //on lance la fonction GetValeurMeteo toute les 10 secondes
     //pour stopper il faut appeller la fonction : clearInterval()
-}, 2000);
+}, 10000);

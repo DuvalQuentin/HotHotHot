@@ -5,8 +5,7 @@
         <title>HotHotHot</title>
         <link rel="stylesheet" href="styles/temperature.css">
         <link rel="icon" href="images/favicon.png"/>
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-        <script src="javascript/meteo.js"></script>
+        <link rel="stylesheet" href="styles/notie.min.css">
     </head>
     <body class="body">
     <h1 class="titre1"><u>Bienvenue sur HotHotHot : </u></h1>
@@ -15,20 +14,16 @@
         <option value="./pages/parametres.html"> Paramètres</option>
         <option value="./pages/connexion.html">Deconnexion</option>
     </select>
-
     <article class="afficheTemperature">
-<!--        <h2>Entrer la ville de votre choix (ex: Toulon) : </h2>-->
-<!--        <input class="ville" type="text" placeholder="ville">-->
-<!--        <input type="button" value="APPEL API METEO"  onclick="buttonClickGET()"  />-->
-<!--        <p id="zone_meteo">LA TEMPERATURE S'AFFICHERA ICI</p>-->
         <h2>Température actuelle de l'intérieur : </h2>
         <a id="valeurTemperatureInterieur">...°</a>
         <p><a href="./pages/historique.html">Graphique historique</a></p>
         <h2>Température actuelle de l'extérieur : </h2>
         <a id="valeurTemperatureExterieur">...°</a>
-        <p></p><a href="./pages/historique.html">Graphique historique</a></p>
+        <p><a href="./pages/historique.html">Graphique historique</a></p>
     </article>
     <article class="historiqueinterieur">
+
         <h2>Historique intérieur</h2>
         <article class="heureTemperature">
             <h2>01:00</h2>
@@ -37,7 +32,9 @@
         <article class="heureTemperature">
             <h2>02:00</h2>
             <p>45°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <button type="button" id="alertInt1" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>03:00</h2>
@@ -46,7 +43,9 @@
         <article class="heureTemperature">
             <h2>04:00</h2>
             <p>26°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <button type="button" id="alertInt2" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>05:00</h2>
@@ -59,7 +58,9 @@
         <article class="heureTemperature">
             <h2>07:00</h2>
             <p>4°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <button type="button" id="alertInt3" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>08:00</h2>
@@ -67,11 +68,17 @@
         </article>
         <article class="heureTemperature">
             <h2>09:00</h2>
-            <p>14°</p>
+            <p>0°</p>
+            <button type="button" id="alertInt4" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>10:00</h2>
-            <p>13°</p>
+            <p>-22°</p>
+            <button type="button" id="alertInt5" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>11:00</h2>
@@ -87,7 +94,9 @@
         <article class="heureTemperature">
             <h2>01:00</h2>
             <p>666°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <button type="button" id="alertExt1" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>02:00</h2>
@@ -95,7 +104,10 @@
         </article>
         <article class="heureTemperature">
             <h2>03:00</h2>
-            <p>12°</p>
+            <p>-12°</p>
+            <button type="button" id="alertExt2" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>04:00</h2>
@@ -104,12 +116,13 @@
         <article class="heureTemperature">
             <h2>05:00</h2>
             <p>-56°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <button type="button" id="alertExt3" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>06:00</h2>
             <p>4°</p>
-            <a class="alertinfo" href="#">ALERT</a>
         </article>
         <article class="heureTemperature">
             <h2>07:00</h2>
@@ -125,17 +138,28 @@
         </article>
         <article class="heureTemperature">
             <h2>10:00</h2>
-            <p>32°</p>
-            <a class="alertinfo" href="#">ALERT</a>
+            <p>37°</p>
+            <button type="button" id="alertExt4" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>11:00</h2>
-            <p>12°</p>
+            <p>-12°</p>
+            <button type="button" id="alertExt5" class="button">
+                ALERT
+            </button>
         </article>
         <article class="heureTemperature">
             <h2>12:00</h2>
             <p>13°</p>
         </article>
     </article>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="javascript/meteo.js"></script>
+    <script src="javascript/notie.min.js"></script>
+    <script src="javascript/notifications.js"></script>
+
     </body>
 </html>
