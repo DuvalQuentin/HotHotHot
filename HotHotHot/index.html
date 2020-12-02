@@ -6,11 +6,13 @@
         <link rel="stylesheet" href="styles/temperature.css">
         <link rel="icon" href="images/favicon.png"/>
         <link rel="stylesheet" href="styles/notie.min.css">
+        <link rel="stylesheet" media="screen" href="styles/particles.css">
     </head>
     <body class="body">
     <h1 class="titre1"><u>Bienvenue sur HotHotHot : </u></h1>
     <select class="monselect" onchange="location = this.value;">
-        <option selected value="./index.html">Mon compte</option>
+        <option selected value="./index.html">Accueil</option>
+        <option value="./pages/infoCompte.html">Informations du compte</option>
         <option value="./pages/parametres.html"> Paramètres</option>
         <option value="./pages/connexion.html">Deconnexion</option>
     </select>
@@ -156,6 +158,7 @@
         </article>
     </article>
 
+    <script src="javascript/particles.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="javascript/meteo.js"></script>
     <script src="javascript/notie.min.js"></script>
@@ -163,3 +166,4 @@
 
     </body>
 </html>
+

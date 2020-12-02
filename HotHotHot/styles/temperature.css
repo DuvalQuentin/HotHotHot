@@ -71,7 +71,8 @@
 .monselect{
     margin-left: 75%;
     border-radius: 20px;
-    background-color: #38ada9;
+    background-color: #82ccdd;
+    height:50px;
 }
 
 .afficheTemperature
@@ -125,7 +126,7 @@
     .monselect{
         margin-left: 75%;
         border-radius: 20px;
-        background-color: #38ada9;
+        background-color: #82ccdd;;
         margin-right: 5%;
     }
 

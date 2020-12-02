@@ -5,11 +5,14 @@
     <title>Title</title>
     <link rel="stylesheet" href="../styles/temperature.css">
     <link rel="icon" href="../images/favicon.png"/>
+    <link rel="stylesheet" href="../styles/particles.css">
+
 </head>
 <body class="body">
     <h1 class="titre1"><u>Connexion : </u></h1>
     <select class="monselect" onchange="location = this.value;">
-        <option value="../index.html">Mon compte</option>
+        <option value="../index.html">Accueil</option>
+        <option value="../pages/infoCompte.html">Informations du compte</option>
         <option value="../pages/parametres.html"> Paramètres</option>
         <option selected value="../pages/connexion.html">Deconnexion</option>
     </select>
@@ -21,5 +24,7 @@
         <input type="submit" value="connexion">
         </form>
     </section>
+
+    <script src="../javascript/particles.js"></script>
 </body>
 </html>
